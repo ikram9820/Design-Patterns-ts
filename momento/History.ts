@@ -1,7 +1,7 @@
 import EditorState from "./EditorState";
 
-class EditorHistory {
-  private _states?: EditorState[];
+class History {
+  private _states: EditorState[] = [];
 
   public push(state: EditorState) {
     this._states?.push(state);
@@ -12,4 +12,4 @@ class EditorHistory {
   }
 }
 
-export default EditorHistory;
+export default History;
