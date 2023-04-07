@@ -11,5 +11,6 @@ editor.content ="khan";
 history.push(editor.createState());
 
 editor.content="kako";
-history.push(editor.createState());
+editor.restore(history.pop());
+editor.restore(history.pop());
 console.log(editor.content);

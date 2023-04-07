@@ -1,5 +1,5 @@
 class EditorState {
-  constructor(private _content: string) {}
+  constructor(private readonly _content: string) {}
 
   public get content(): string {
     return this._content;
