@@ -8,11 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "preLaunchTask": "tsc: build - tsconfig.json",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${file}"
+            "program": "${workspaceFolder}\\momento\\exe\\index.ts",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }
