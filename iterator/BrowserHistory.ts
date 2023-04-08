@@ -14,11 +14,11 @@ export default class BrowseHistory {
   }
 
   public createIterator(): Iterator {
-    return this.arrayIterator();
-  }
+  //   return this.listIterator();
+  // }
 
-  private arrayIterator() {
-    class ArrayIterator implements Iterator {
+  // private listIterator():Iterator {
+    class ListIterator implements Iterator {
       private _index = 0;
       constructor(private _history: BrowseHistory) {}
 
@@ -31,7 +31,7 @@ export default class BrowseHistory {
       public next() {
         this._index++;
       }
-    }//end ArrayIterator
-    return new ArrayIterator(this);
+    }//end ListIterator
+    return new ListIterator(this);
   }
 }
