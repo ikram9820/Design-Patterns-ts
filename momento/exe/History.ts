@@ -8,12 +8,9 @@ class History {
   }
 
   public pop(): DocumentState {
-    if (this._states.length === 0)
-      throw new Error("There is no history, You cann't pop anymore");
-    let index = this._states.length - 1;
-    let state = this._states[index];
-    this._states.pop();
-    return state;
+    let removedItem = this._states.pop();
+    if (removedItem) return removedItem;
+    throw new Error("there is no history");
   }
 }
 
