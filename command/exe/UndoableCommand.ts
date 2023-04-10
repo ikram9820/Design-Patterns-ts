@@ -1,5 +1,5 @@
 import Command from "./Command";
 interface UndoableCommand extends Command {
-  unexecute(): void;
+  undo(): void;
 }
 export default UndoableCommand;

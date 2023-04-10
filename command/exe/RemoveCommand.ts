@@ -7,7 +7,7 @@ class RemoveCommand implements UndoableCommand {
 
   constructor(private _videoEditor: VideoEditor, private _history: History) {}
 
-  public unexecute(): void {
+  public undo(): void {
     this._videoEditor.text = this._prevContent 
   }
   execute(): void {
