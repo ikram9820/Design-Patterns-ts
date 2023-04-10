@@ -1,5 +1,5 @@
 import CustomerService from "./CustomerService";
-import Command from "./fx/Command";
+import Command from "./Command";
 
 class AddCustomerCommand implements Command {
   constructor(private _service: CustomerService) {}

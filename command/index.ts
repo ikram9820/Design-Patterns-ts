@@ -1,4 +1,4 @@
-import AddCustomerCommand from "./AddCustomerCommand";
+import AddCustomerCommand from "./fx/AddCustomerCommand";
 import BlackAndWhiteCommand from "./BlackAndWhiteCommand";
 import CompositeCommand from "./CompositeCommand";
 import CustomerService from "./CustomerService";
