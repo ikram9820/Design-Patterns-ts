@@ -16,7 +16,8 @@
     "iterator": "ts-node iterator/index.ts",
     "iteratorx": "ts-node iterator/exe/index.ts",
     "template": "ts-node template/index.ts",
-    "templatex": "ts-node template/exe/index.ts"
+    "templatex": "ts-node template/exe/index.ts",
+    "observer": "ts-node observer/index.ts"
   },
   "keywords": [],
   "author": "",
