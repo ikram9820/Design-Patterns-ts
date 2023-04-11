@@ -1,4 +1,4 @@
-import Command from "./Command";
+import Command from "./fx/Command";
 
 class Button {
   constructor(private _command: Command) {}

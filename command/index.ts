@@ -1,18 +1,8 @@
-import AddCustomerCommand from "./fx/AddCustomerCommand";
-import BlackAndWhiteCommand from "./BlackAndWhiteCommand";
-import CompositeCommand from "./CompositeCommand";
+import AddCustomerCommand from "./AddCustomerCommand";
 import CustomerService from "./CustomerService";
-import ResizeCommand from "./ResizeCommand";
-import Button from "./fx/Button";
+import Button from "./Button";
 
-// let service = new CustomerService();
-// let command = new AddCustomerCommand(service);
-// let button = new Button(command);
-// button.click();
-
-let commands = new CompositeCommand();
-
-commands.addCommand(new BlackAndWhiteCommand());
-commands.addCommand(new ResizeCommand());
-
-commands.execute();
+let service = new CustomerService();
+let command = new AddCustomerCommand(service);
+let button = new Button(command);
+button.click();

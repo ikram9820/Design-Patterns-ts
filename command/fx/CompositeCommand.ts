@@ -1,4 +1,4 @@
-import Command from "./fx/Command";
+import Command from "./Command";
 
 class CompositeCommand implements Command {
   private _commands: Command[] = [];
