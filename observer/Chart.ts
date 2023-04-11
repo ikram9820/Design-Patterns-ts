@@ -1,8 +1,12 @@
+import DataSource from "./DataSource";
 import Observer from "./Observer";
 
 class Chart implements Observer {
-  update(value: number): void {
-    console.log(`value: ${value} in chart.`);
+  constructor(private _dataSource: DataSource) {}
+  update(): void {
+    console.log(
+      `chart notified with ${this._dataSource.value} from data source`
+    );
   }
 }
 

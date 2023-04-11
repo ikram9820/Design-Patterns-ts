@@ -12,7 +12,7 @@ class DataSource implements Observable {
     this._observers = this._observers.filter((obs) => obs !== observer);
   }
   notifyObservers(): void {
-    this._observers.forEach((obs) => obs.update(this._value));
+    this._observers.forEach((obs) => obs.update());
   }
 
   public get value() {
