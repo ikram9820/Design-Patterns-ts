@@ -18,7 +18,9 @@
     "template": "ts-node template/index.ts",
     "templatex": "ts-node template/exe/index.ts",
     "observer": "ts-node observer/index.ts",
-    "observerx": "ts-node observer/exe/index.ts"
+    "observerx": "ts-node observer/exe/index.ts",
+    "chainOfResponsibility": "ts-node  chainOfResponsibility/index.ts",
+    "chainOfResponsibilityx": "ts-node chainOfResponsibility/exe/index.ts"
   },
   "keywords": [],
   "author": "",
