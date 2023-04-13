@@ -16,6 +16,7 @@
     "mementox": "ts-node memento/exe/index.ts",
     "iterator": "ts-node iterator/index.ts",
     "iteratorx": "ts-node iterator/exe/index.ts",
+    "iteratorp": "ts-node iterator/post/index.ts",
     "template": "ts-node template/index.ts",
     "templatex": "ts-node template/exe/index.ts",
     "observer": "ts-node observer/index.ts",
