@@ -22,7 +22,9 @@
     "observer": "ts-node observer/index.ts",
     "observerx": "ts-node observer/exe/index.ts",
     "chainOfResponsibility": "ts-node  chainOfResponsibility/index.ts",
-    "chainOfResponsibilityx": "ts-node chainOfResponsibility/exe/index.ts"
+    "chainOfResponsibilityx": "ts-node chainOfResponsibility/exe/index.ts",
+    "mediator": "ts-node  mediator/index.ts",
+    "mediatoro": "ts-node  mediator/observer/index.ts"
   },
   "keywords": [],
   "author": "",
