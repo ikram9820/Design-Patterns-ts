@@ -1,4 +1,4 @@
-import UIControl from "./UIConrol";
+import UIControl from "./UIControl";
 
 class ListBox extends UIControl {
   private _selection = "";

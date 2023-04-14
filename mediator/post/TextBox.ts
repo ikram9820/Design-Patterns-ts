@@ -6,12 +6,11 @@ class TextBox extends UIControl {
     return this._content;
   }
   public set content(value) {
-    this._content = value;
+    this._content = value.trim();
     this._owner.changed(this);
   }
-  public isEmpty() {
-    return this._content === null || this._content === "";
+  public get isEmpty() {
+    return this._content === "";
   }
 }
-
 export default TextBox;

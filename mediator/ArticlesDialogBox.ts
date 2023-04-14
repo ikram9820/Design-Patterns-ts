@@ -2,7 +2,7 @@ import Button from "./Button";
 import DialogBox from "./DialogBox";
 import ListBox from "./ListBox";
 import TextBox from "./TextBox";
-import UIControl from "./UIConrol";
+import UIControl from "./UIControl";
 
 class ArticlesDialogBox implements DialogBox {
   private _saveButton = new Button(this);
