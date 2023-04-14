@@ -24,7 +24,8 @@
     "chainOfResponsibility": "ts-node  chainOfResponsibility/index.ts",
     "chainOfResponsibilityx": "ts-node chainOfResponsibility/exe/index.ts",
     "mediator": "ts-node  mediator/index.ts",
-    "mediatoro": "ts-node  mediator/observer/index.ts"
+    "mediatoro": "ts-node  mediator/observer/index.ts",
+    "mediatore": "ts-node  mediator/exe/index.ts"
   },
   "keywords": [],
   "author": "",
