@@ -1,3 +1,4 @@
-export default interface Encryption {
+interface Encryption {
   send(message: string): void;
 }
+export default Encryption;

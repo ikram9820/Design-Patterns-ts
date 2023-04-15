@@ -6,3 +6,7 @@ let chat = new ChatClient(new AESEcnrytion());
 chat.send("hello");
 chat.encryptionAlgorithm = new DESEncryption();
 chat.send("world");
+
+// Output
+// Encrypting "hello" using AES
+// Encrypting "world" using DES
