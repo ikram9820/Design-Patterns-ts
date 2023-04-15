@@ -3,27 +3,26 @@ import Observer from "./Observer";
 
 class Stock implements Observable {
   private _observers: Observer[] = [];
+
   constructor(private _symbol: string, private _price: number) {}
-  addObserver(observer: Observer): void {
+  public attach(observer: Observer) {
     this._observers.push(observer);
   }
-  removeObserver(observer: Observer): void {
-    this._observers.filter((obs) => obs !== observer);
+  public detach(observer: Observer) {
+    this._observers = this._observers.filter((obs) => obs !== observer);
   }
-  notifyObservers(): void {
-    this._observers.forEach((obs) => obs.show());
+  public notify() {
+    this._observers.forEach((obs) => obs.priceChanged());
   }
-
-  public get price(): number {
+  public getPrice(): number {
     return this._price;
   }
-  public set price(value: number) {
-    this._price = value;
+  public setPrice(price: number) {
+    this._price = price;
+    this.notify();
   }
-
   public toString() {
-    return "Stock{ symbol=" + this._symbol + ", price=" + this._price + "}";
+    return "symbol=" + this._symbol + ", price= $" + this._price;
   }
 }
-
 export default Stock;

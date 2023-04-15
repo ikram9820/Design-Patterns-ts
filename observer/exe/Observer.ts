@@ -1,6 +1,5 @@
-
-interface Observer{
-    show():void;
+interface Observer {
+  priceChanged(): void;
 }
 
 export default Observer;

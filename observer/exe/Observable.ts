@@ -1,9 +1,9 @@
 import Observer from "./Observer";
 
 interface Observable {
-  addObserver(observer: Observer): void;
-  removeObserver(observer: Observer): void;
-  notifyObservers(): void;
+  attach(observer: Observer): void;
+  detach(observer: Observer): void;
+  notify(): void;
 }
 
 export default Observable;
