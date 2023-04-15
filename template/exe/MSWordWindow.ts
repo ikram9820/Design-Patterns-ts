@@ -1,10 +1,10 @@
 import Window from "./Window";
 
 class MSWordWindow extends Window {
-  protected doBeforeClose(): void {
+  protected closing(): void {
     console.log("Are you sure to close MS word?");
   }
-  protected doAfterClose(): void {
+  protected closed(): void {
     console.log("MS word data is saved.");
   }
 }

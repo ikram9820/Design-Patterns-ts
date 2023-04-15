@@ -1,10 +1,10 @@
 import Window from "./Window";
 
 class VSCodeWindow extends Window {
-  protected doBeforeClose(): void {
+  protected closing(): void {
     console.log("Are you sure to close VSCode?");
   }
-  protected doAfterClose(): void {
+  protected closed(): void {
     console.log("VSCode data is saved.");
   }
 }

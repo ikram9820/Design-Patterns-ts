@@ -1,12 +1,12 @@
 abstract class Window {
   public close() {
-    this.doBeforeClose();
+    this.closing();
     console.log("Removing the window from the screen");
-    this.doAfterClose();
+    this.closed();
   }
 
-  protected abstract doBeforeClose(): void;
-  protected abstract doAfterClose(): void;
+  protected abstract closing(): void;
+  protected abstract closed(): void;
 }
 
 export default Window;
