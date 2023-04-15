@@ -1,13 +1,13 @@
 import LoginDialogBox from "./LoginDialogBox";
 
-let login = new LoginDialogBox();
-console.log("Initially Login Button isEnabled: " + login.loginButton.isEnabled);
-login.emailText.content = "email";
-console.log("After setting the email: " + login.loginButton.isEnabled);
-login.passwordText.content = "password";
-console.log("After setting the password: " + login.loginButton.isEnabled);
-login.emailText.content = "";
-console.log("After removing the email: " + login.loginButton.isEnabled);
+let form = new LoginDialogBox();
+console.log("Initially Login Button isEnabled: " + form.loginButton.isEnabled);
+form.emailText.content = "email";
+console.log("After setting the email: " + form.loginButton.isEnabled);
+form.passwordText.content = "password";
+console.log("After setting the password: " + form.loginButton.isEnabled);
+form.emailText.content = "";
+console.log("After removing the email: " + form.loginButton.isEnabled);
 
 // Output
 // Initially Login Button isEnabled: false

@@ -1,17 +1,13 @@
 import DocumentState from "./DocumentState";
 
-class History {
+class DocumentHistory {
   private _states: DocumentState[] = [];
 
   public push(state: DocumentState) {
     this._states.push(state);
   }
-
   public pop(): DocumentState {
-    let removedItem = this._states.pop();
-    if (removedItem) return removedItem;
-    throw new Error("there is no history");
+    return this._states.pop() as DocumentState;
   }
 }
-
-export default History;
+export default DocumentHistory;
