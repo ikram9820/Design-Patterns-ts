@@ -1,9 +1,9 @@
 import FactSegment from "./FactSegment";
 import FormatSegment from "./FormatSegment";
-import Operation from "./Operation";
+import AudioFilter from "./AudioFilter";
 import Segment from "./Segment";
 
-class NormalizeOperation implements Operation {
+class Normalize implements AudioFilter {
   apply(segment: Segment): void {
     if (segment instanceof FactSegment) this.normalizeFact();
     else if (segment instanceof FormatSegment) this.normalizeFormat();
@@ -15,4 +15,4 @@ class NormalizeOperation implements Operation {
     console.log("Normalize - Format Segment");
   }
 }
-export default NormalizeOperation;
+export default Normalize;

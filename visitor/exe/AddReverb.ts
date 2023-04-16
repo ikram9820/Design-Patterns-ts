@@ -1,11 +1,9 @@
-import AnchorNode from "../AnchorNode";
-import HeadingNode from "../HeadingNode";
-import Operation from "../Operation";
+import AudioFilter from "./AudioFilter";
 import FactSegment from "./FactSegment";
 import FormatSegment from "./FormatSegment";
 import Segment from "./Segment";
 
-class AddReverbOperation implements Operation {
+class AddReverb implements AudioFilter {
   apply(segment: Segment): void {
     if (segment instanceof FactSegment) this.addReverbFact();
     else if (segment instanceof FormatSegment) this.addReverbFormat();
@@ -17,4 +15,4 @@ class AddReverbOperation implements Operation {
     console.log("Add Reverb - Format Segment");
   }
 }
-export default AddReverbOperation;
+export default AddReverb;

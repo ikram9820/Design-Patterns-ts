@@ -1,5 +1,17 @@
-import NormalizeOperation from "./NormalizeOperation";
-import WavFile from "./WaveFile";
+import AddReverb from "./AddReverb";
+import Normalize from "./Normalize";
+import ReduceNoise from "./ReduceNoise";
+import WavFile from "./WavFile";
 
-let wave = WavFile.read('wave.wav');
-wave.execute(new NormalizeOperation());
+let file = WavFile.read("file.wav");
+file.execute(new Normalize());
+file.execute(new ReduceNoise());
+file.execute(new AddReverb());
+// Output 
+// Reading data from file.wav
+// Normalize - Format Segment
+// Normalize - Fact Segment
+// Reduce Noise - Format Segment
+// Reduce Noise - Fact Segment
+// Add Reverb - Format Segment
+// Add Reverb - Fact Segment

@@ -1,6 +1,6 @@
-import Operation from "../Operation";
+import AudioFilter from "./AudioFilter";
 
 interface Segment {
-  execute(operation:Operation):void;
+  apply(filter: AudioFilter): void;
 }
 export default Segment;

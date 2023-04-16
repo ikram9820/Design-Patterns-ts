@@ -25,7 +25,7 @@
     "chainOfResponsibilityx": "ts-node chainOfResponsibility/exe/index.ts",
     "mediator": "ts-node  mediator/index.ts",
     "mediatoro": "ts-node  mediator/observer/index.ts",
-    "mediatore": "ts-node  mediator/exe/index.ts",
+    "mediatorx": "ts-node  mediator/exe/index.ts",
     "mediatorp": "ts-node  mediator/post/index.ts",
     "visitor": "ts-node  visitor/index.ts",
     "visitorx": "ts-node  visitor/exe/index.ts"

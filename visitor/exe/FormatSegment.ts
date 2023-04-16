@@ -1,9 +1,9 @@
-import Operation from "./Operation";
+import AudioFilter from "./AudioFilter";
 import Segment from "./Segment";
 
 class FormatSegment implements Segment {
-  execute(operation: Operation): void {
-    operation.apply(this);
+  apply(filter: AudioFilter): void {
+    filter.apply(this);
   }
 }
 export default FormatSegment;
