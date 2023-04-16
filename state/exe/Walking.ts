@@ -1,3 +1,4 @@
+// Walking.ts
 import TravelMode from "./TravelMode";
 
 class Walking implements TravelMode {
@@ -5,10 +6,8 @@ class Walking implements TravelMode {
     console.log("Calculating ETA (walking)");
     return 4;
   }
-  getDirection(): number {
+  getDirection() {
     console.log("Calculating Direction (walking)");
-    return 4;
   }
 }
-
 export default Walking;

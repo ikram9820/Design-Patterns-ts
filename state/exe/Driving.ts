@@ -1,3 +1,4 @@
+// Driving.ts
 import TravelMode from "./TravelMode";
 
 class Driving implements TravelMode {
@@ -5,9 +6,8 @@ class Driving implements TravelMode {
     console.log("Calculating ETA (driving)");
     return 1;
   }
-  getDirection(): number {
+  getDirection() {
     console.log("Calculating Direction (driving)");
-    return 1;
   }
 }
 export default Driving;

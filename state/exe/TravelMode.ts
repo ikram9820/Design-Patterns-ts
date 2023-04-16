@@ -1,6 +1,6 @@
-interface TravelMode{
-    getEta():number;
-    getDirection():number;
+// TravelMode.ts
+interface TravelMode {
+  getEta(): number;
+  getDirection(): void;
 }
-
 export default TravelMode;

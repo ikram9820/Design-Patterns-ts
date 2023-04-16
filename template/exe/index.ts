@@ -1,3 +1,4 @@
+//index.ts
 import ChromeWindow from "./ChromeWindow";
 import VSCodeWindow from "./VSCodeWindow";
 import Window from "./Window";

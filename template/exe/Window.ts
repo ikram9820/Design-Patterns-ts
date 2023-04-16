@@ -1,3 +1,4 @@
+//Window.ts
 abstract class Window {
   public close() {
     this.closing();
@@ -8,5 +9,4 @@ abstract class Window {
   protected abstract closing(): void;
   protected abstract closed(): void;
 }
-
 export default Window;

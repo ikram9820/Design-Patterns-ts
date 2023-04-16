@@ -1,3 +1,4 @@
+//VSCodeWindow.ts
 import Window from "./Window";
 
 class VSCodeWindow extends Window {
@@ -8,5 +9,4 @@ class VSCodeWindow extends Window {
     console.log("VSCode data is saved.");
   }
 }
-
 export default VSCodeWindow;

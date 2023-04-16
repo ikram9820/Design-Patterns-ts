@@ -1,3 +1,4 @@
+//ChromeWindow.ts
 import Window from "./Window";
 
 class ChromeWindow extends Window {

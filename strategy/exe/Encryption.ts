@@ -1,3 +1,4 @@
+// Encryption.ts
 interface Encryption {
   send(message: string): void;
 }

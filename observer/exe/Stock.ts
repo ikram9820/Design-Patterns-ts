@@ -1,3 +1,4 @@
+//Stock.ts
 import Observable from "./Observable";
 import Observer from "./Observer";
 
@@ -11,7 +12,7 @@ class Stock implements Observable {
   public detach(observer: Observer) {
     this._observers = this._observers.filter((obs) => obs !== observer);
   }
-  public notify() {
+  public notifyObserver() {
     this._observers.forEach((obs) => obs.priceChanged());
   }
   public getPrice(): number {
@@ -19,7 +20,7 @@ class Stock implements Observable {
   }
   public setPrice(price: number) {
     this._price = price;
-    this.notify();
+    this.notifyObserver();
   }
   public toString() {
     return "symbol=" + this._symbol + ", price= $" + this._price;
