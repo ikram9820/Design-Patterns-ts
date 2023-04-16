@@ -26,7 +26,8 @@
     "mediator": "ts-node  mediator/index.ts",
     "mediatoro": "ts-node  mediator/observer/index.ts",
     "mediatore": "ts-node  mediator/exe/index.ts",
-    "mediatorp": "ts-node  mediator/post/index.ts"
+    "mediatorp": "ts-node  mediator/post/index.ts",
+    "visitor": "ts-node  visitor/index.ts"
   },
   "keywords": [],
   "author": "",
